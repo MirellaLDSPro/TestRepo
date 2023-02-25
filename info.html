@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <title>Minha Apresentação Profissional</title>
     <style>
+      /* Estilos do menu */
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+        background-color: #333;
+      }
+      .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-right: 20px;
+      }
+      /* Estilos do resto da página */
       body {
         font-family: Arial, sans-serif;
         color: #333;
+        margin: 0;
       }
       .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100vh;
+        height: calc(100vh - 60px);
         background-color: #f7f7f7;
       }
       .left-side {
@@ -41,10 +57,13 @@
     </style>
   </head>
   <body>
+    <div class="menu">
+      <a href="index.html">Home</a>
+    </div>
     <div class="container">
       <div class="left-side">
-        <h1>Mirella Lins</h1>
-        <p>Dev full stak</p>
+        <h1>Seu Nome</h1>
+        <p>Carreira ou Profissão</p>
         <p>Portfólio: <a href="#">link do portfólio</a></p>
         <p>Objetivos: descrição breve dos seus objetivos profissionais</p>
       </div>
