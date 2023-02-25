@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <title>Página com background preto e texto branco</title>
     <style>
+      /* Estilos do menu */
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+        background-color: #333;
+      }
+      .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-right: 20px;
+      }
+      /* Estilos do resto da página */
       body {
         background-color: black;
         color: white;
         font-family: Arial, sans-serif;
         text-align: center;
+        margin: 0;
       }
       #content {
         margin: 0 auto;
@@ -23,6 +39,9 @@
     </style>
   </head>
   <body>
+    <div class="menu">
+      <a href="#">Info</a>
+    </div>
     <div id="content">
       <h1>Título</h1>
       <p>Este é um exemplo de página com background preto e texto branco.</p>
