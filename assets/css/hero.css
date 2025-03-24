@@ -1,0 +1,95 @@
+.hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+ }
+
+ .hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+ }
+
+ .hero-section .hero-details .title {
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+ }
+
+ .hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semi-bold);
+ }
+
+ .hero-section .hero-details .description {
+    margin: 24px 0 40px;
+    max-width: 70%;
+    font-size: var(--font-size-m);
+ }
+
+ .hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px;
+ }
+
+ .hero-section .hero-details .button {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: 2rem;
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3s ease;
+ }
+
+ .hero-section .hero-details .button:hover,
+ .hero-section .hero-details .contact-us {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+ }
+
+ .hero-section .hero-details .contact-us:hover {
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+ }
+
+ .hero-section .hero-image-wrapper {
+    width: 600px;
+    margin-right: 30px;
+    border-radius: var(--border-radius-circle);
+ }
+
+@media screen and (max-width: 768px) {
+    :root {
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    .hero-section .section-content {
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .hero-details :is(.subtitle, .description) {
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
+ }
