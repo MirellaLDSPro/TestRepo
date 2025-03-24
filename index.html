@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/testimonial.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -61,7 +64,7 @@
 
                     <div class="buttons">
                         <a href="#" class="button order-now">Crie agora</a>
-                        <a href="#" class="button contact-us">Contate-nos</a>
+                        <a href="https://api.whatsapp.com/send/?phone=5511969263948&text=Tenho+interesse+em+comprar+seu+carro" class="button contact-us">Contate-nos</a>
                     </div>
                 </div>
 
@@ -92,7 +95,7 @@
                     <h4 class="subtitle">Nosso Time</h4>
                     <p class="time">Nosso time é formado por desenvolvedores, designers e estrategistas digitais que compartilham um único objetivo: criar sites incríveis e fazer nossos clientes brilharem na internet!</p>
                     <p class="explanation">💬 Vamos conversar? Entre em contato e descubra como podemos transformar sua ideia em um site de sucesso!</p>
-                    <div class="social-link-list">
+                    <!-- <div class="social-link-list">
                         <a href="#" class="social-link">
                             <i class="fa-brands">Github</i>
                         </a>
@@ -102,13 +105,45 @@
                         <a href="#" class="social-link">
                             <i class="fa-brands">Linkedin</i>
                         </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <h2 class="section-title">Depoimentos</h2>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="testimonial-list swiper-wrapper">
+                               <li class="testimonial swiper-slide">
+                                    <img class="user-image" src="/assets/img/profile.jpg" alt="Logo Residences">
+                                    <h3 class="name">Residences</h3>
+                                    <i class="testimonial-feedback">"Obrigado por tornar minha vida mais simples e agradável. A equipe do MLDS.dev é incrível e sempre está pronta para ajudar!"</i>
+                               </li> 
+                               <li class="testimonial swiper-slide">
+                                    <img class="user-image" src="/assets/img/profile.jpg" alt="Logo Residences">
+                                    <h3 class="name">Residences</h3>
+                                    <i class="testimonial-feedback">"Obrigado por tornar minha vida mais simples e agradável. A equipe do MLDS.dev é incrível e sempre está pronta para ajudar!"</i>
+                                </li> 
+                               <li class="testimonial swiper-slide">
+                                    <img class="user-image" src="/assets/img/profile.jpg" alt="Logo Residences">
+                                    <h3 class="name">Residences</h3>
+                                    <i class="testimonial-feedback">"Obrigado por tornar minha vida mais simples e agradável. A equipe do MLDS.dev é incrível e sempre está pronta para ajudar!"</i>
+                                </li> 
+                            </ul>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    
 </body>
 </html>
